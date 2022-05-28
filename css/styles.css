@@ -4,6 +4,8 @@
 --accent-color: #2196F3;
 --primary-white-color: #FFFFFF;
 --button-bg-color: #F5F4FA;
+--features-bg-color: #F5F4FA;
+--team-bg-color: #F5F4FA;
 --color-hover: #188CEF;
 --secondary-bg-color: #2F303A;
 --footer-address-color: rgba(255, 255, 255, 0.6);
@@ -233,12 +235,9 @@ img{
     background-color: var(--color-hover);
 }
     
-.filter .item + .item{
-    margin-left: 8px;
-}
 .button.primary:focus,
 .button.primary:hover{
-    color: var(--primary-button-hover);
+    color: var(--color-hover);
     background-color: var(--primary-white-color);
 }
 .button.secondary:focus,
@@ -292,11 +291,38 @@ img{
     width: 270px;
 }
 
+.features .item::before {
+    border-radius: 4px;
+    content: "";
+    display: block;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-color: var(--features-bg-color);
+}
+
+.icon-antenna::before{
+    background-image: url(../images/antenna\ 1.svg);
+}
+
+.icon-clock::before{
+    background-image: url(../images/clock\ 1.svg);
+}
+
+.icon-diagram::before{
+    background-image: url(../images/diagram\ 1.svg);
+}
+
+.icon-astronaut::before{
+    background-image: url(../images/astronaut\ 1.svg);
+}
 .features .item + .item{
     margin-left: 30px; 
 }
 
 .features-title {
+    margin-top: 30px;
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -328,7 +354,7 @@ img{
     /*Section team*/
 .team{
     display: flex;
-    background-color: var(--button-bg-color);
+    background-color: var(--team-bg-color);
 }
 
 .team-information{
@@ -370,6 +396,9 @@ img{
     justify-content: center;
 }
 
+.filter .item+.item {
+    margin-left: 8px;
+}
 
     /*Portfolio*/
 .portfolio{
