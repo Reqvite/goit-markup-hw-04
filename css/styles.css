@@ -49,7 +49,6 @@ img{
 .section-title {
     margin-bottom: 50px;
 
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -128,31 +127,33 @@ img{
 .contacts .link:focus {
      color: var(--color-hover);
 }
-    
+
 .site-nav .link.current {
      color: var(--accent-color);
 }
 
 .contacts{
-    display: flex;
+    display:flex;
     margin-left: auto;
 
 }
+
+.contacts-icon{
+    margin-right: 10px;
+    fill: currentColor;
+
+}
+
 
 .contacts .item + .item{
     margin-left: 50px;
 }
 
-.icon-mail{
-    width: 16px;
-    height: 12px;
-    outline: 2px solid red;
-}
+
 .contacts .link {
-      display: block;
+        display: flex;
       padding-top: 32px;
       padding-bottom: 32px;
-
       color: var(--secondary-text-color);
       text-decoration: none;
       font-weight: 500;
@@ -201,6 +202,18 @@ img{
      color: var(--color-hover);
  }
 
+ .footer-title{
+     color:var(--primary-white-color);
+  
+    line-height: 1.14;
+     letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+ }
+
+ .footer-social{
+    display: flex;
+ }
     /*buttons*/
 
 .button {
@@ -297,20 +310,17 @@ img{
     width: 270px;
 }
 
-.features .features-background{
+.features .features-thumb{
     display: flex;
     border-radius: 4px;
     height: 120px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-        background-color: var(--features-bg-color);
+    background-color: var(--features-bg-color);
 }
 
 .features-icon{
     width: 70px;
     height: 70px;
+    margin: auto;
 }
 
 .features .item + .item{
@@ -321,7 +331,7 @@ img{
     margin-top: 30px;
     margin-bottom: 10px;
 
-    font-weight: 700;
+ 
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -419,7 +429,6 @@ img{
 }
 .portfolio-title{
     margin-bottom: 4px;
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
