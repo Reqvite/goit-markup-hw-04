@@ -142,6 +142,12 @@ img{
 .contacts .item + .item{
     margin-left: 50px;
 }
+
+.icon-mail{
+    width: 16px;
+    height: 12px;
+    outline: 2px solid red;
+}
 .contacts .link {
       display: block;
       padding-top: 32px;
@@ -291,32 +297,22 @@ img{
     width: 270px;
 }
 
-.features .item::before {
+.features .features-background{
+    display: flex;
     border-radius: 4px;
-    content: "";
-    display: block;
     height: 120px;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    background-color: var(--features-bg-color);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+        background-color: var(--features-bg-color);
 }
 
-.icon-antenna::before{
-    background-image: url(../images/antenna\ 1.svg);
+.features-icon{
+    width: 70px;
+    height: 70px;
 }
 
-.icon-clock::before{
-    background-image: url(../images/clock\ 1.svg);
-}
-
-.icon-diagram::before{
-    background-image: url(../images/diagram\ 1.svg);
-}
-
-.icon-astronaut::before{
-    background-image: url(../images/astronaut\ 1.svg);
-}
 .features .item + .item{
     margin-left: 30px; 
 }
