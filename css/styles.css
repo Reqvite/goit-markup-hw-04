@@ -34,6 +34,17 @@ p
 img{
     display: block;
 }
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 .container {
     width: 1200px;
     margin-left: auto;
@@ -56,14 +67,14 @@ img{
     text-align: center;
     letter-spacing: 0.03em;
 }
-/* all lists*/
+/* All lists*/
 .list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/*all links*/
+/*All links*/
 .link{
     text-decoration: none;
 }
@@ -77,7 +88,7 @@ img{
     text-align: center;
 }
 
- /*logo*/
+ /*Logo*/
 .navbar{
     display: flex;
     text-align: center;
@@ -153,17 +164,18 @@ img{
 
 
 .contacts .link {
-        display: flex;
-      padding-top: 32px;
-      padding-bottom: 32px;
-      color: var(--secondary-text-color);
-      text-decoration: none;
-      font-weight: 500;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
  }
     
- /*footer*/
+ /*Footer*/
     
 .footer {
     padding-top: 60px;
@@ -177,9 +189,6 @@ img{
      display: flex;
  }
 
-.address-information{
-
-}
 .address {
     margin-top: 20px;
 }
@@ -187,6 +196,7 @@ img{
 .address .item + .item{
     margin-top: 9px;
 }
+
 .address-city {
     color: var(--primary-white-color);
     font-style: normal;
@@ -213,8 +223,8 @@ img{
 
  .footer-title{
      margin-bottom: 20px;
+
      color:var(--primary-white-color);
-  
     line-height: 1.14;
      letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -342,6 +352,7 @@ img{
 }
 
         /*Section features*/
+
 .features{
     display: flex;
 }
@@ -397,6 +408,7 @@ img{
     margin-left: 30px ;
 }
     /*Section team*/
+
 .team{
     display: flex;
     background-color: var(--team-bg-color);
@@ -462,9 +474,7 @@ img{
     fill: var(--primary-white-color);
 }
 
-
-
-/*--Clients--*/
+    /*--Clients--*/
 
 .clients-list .item + .item{
     margin-left: 30px;
@@ -493,6 +503,7 @@ img{
 /*----------------------------Portfolio -----------------------*/
 
     /* Filter buttons*/
+
 .filter{
     display: flex;
     margin-bottom: 50px;
@@ -504,6 +515,7 @@ img{
 }
 
     /*Portfolio*/
+
 .portfolio{
     display: flex;
     flex-wrap: wrap;
@@ -529,6 +541,7 @@ img{
     border: 1px solid var(--border-color);
     border-top: 0;
 }
+
 .portfolio-title{
     margin-bottom: 4px;
     font-size: 18px;
